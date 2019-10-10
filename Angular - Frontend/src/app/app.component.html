@@ -1,0 +1,10 @@
+<h2>File Upload</h2>
+<input type="text" placeholder="Save with Key" name="id" [(ngModel)]="id">
+<br><br>
+<input type="file" (change)="showPreview($event)">
+<button (click)="save()">Save</button>
+
+<h2>File View</h2>
+<input type="text" name="file" [(ngModel)]="file" placeholder="Enter Unique Search Key">
+<button (click)="view()">View</button>
+
